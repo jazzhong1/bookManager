@@ -162,7 +162,7 @@ public class BookDao {
 				b.setPublish_date(rs.getDate("publish_date"));
 				b.setPrice(rs.getInt("price"));
 			}
-			DBConnect.disConnect(rs, psmt, conn);
+			DBConnect.disConnect(rs, psmt, conn);	//정적클래스로
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
